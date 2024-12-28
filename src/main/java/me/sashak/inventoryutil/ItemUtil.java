@@ -383,8 +383,8 @@ public class ItemUtil {
 			if (isEmptyItem(itemStack)) {
 				continue;
 			}
-			
-			int maxSize = inv.getMaxStackSize();
+
+			int maxSize = itemStack.getMaxStackSize();
 			int requiredAmount = itemStack.getAmount();
 			int[] matchingSlots = slots.getSlots(inv, ItemPredicates.requireSimilarity(itemStack));
 			
